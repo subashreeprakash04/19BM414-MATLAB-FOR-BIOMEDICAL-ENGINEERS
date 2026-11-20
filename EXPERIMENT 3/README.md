@@ -40,39 +40,43 @@ Thresholding separates pixels based on their intensity values. Region growing st
 ## OBSERVATION
 
 1. Input file = tumor_sample.png
-2. Image dimensions = (To be obtained from MATLAB)
-3. Global threshold = (To be obtained from MATLAB)
-4. Threshold mask area = (To be obtained from MATLAB)
-5. Region-growing area = (To be obtained from MATLAB)
-6. Seed coordinates = (To be obtained from MATLAB)
+2. Image dimensions = 1086 × 1448 pixels
+3. Global threshold = 0.2039
+4. Threshold mask area = 627636 pixels
+5. Region-growing area = 7518 pixels
+6. Seed coordinates = (543, 724)
 7. Region-growing tolerance = 0.080
 
 ## SEGMENTATION RESULTS
 
-1. Original image = Medical image input
+1. Original image = Medical image input (tumor_sample.png)
 2. Global thresholding method = Otsu's method
 3. Morphological operations = Opening and Closing
 4. Region-growing method = Four-connected region growing
-5. Threshold mask area = (Actual output in pixels)
-6. Region-growing area = (Actual output in pixels)
-7. Seed value = (Actual output)
+5. Threshold mask area = 627636 pixels
+6. Region-growing area = 7518 pixels
+7. Seed value = 0.0623
 8. Segmentation tolerance = 0.080
 
 ## FIGURE 1 - ORIGINAL MEDICAL IMAGE
 
-![Figure 1 - Original Medical Image](images/experiment3_original.png)
+<img width="791" height="618" alt="image" src="https://github.com/user-attachments/assets/ce021251-2ed7-4df4-934b-848142990dc0" />
+
 
 ## FIGURE 2 - THRESHOLD SEGMENTATION
 
-![Figure 2 - Threshold Segmentation](images/experiment3_threshold.png)
+<img width="791" height="618" alt="image" src="https://github.com/user-attachments/assets/28d94a4f-56b6-4527-950b-b04f6b8e801a" />
+
 
 ## FIGURE 3 - REGION GROWING RESULT
 
-![Figure 3 - Region Growing Result](images/experiment3_region_growing.png)
+<img width="791" height="618" alt="image" src="https://github.com/user-attachments/assets/666ceaee-3f7e-4dc5-8a95-f1ed2ce583c0" />
+
 
 ## FIGURE 4 - SEGMENTATION BOUNDARY OVERLAY
 
-![Figure 4 - Segmentation Boundary Overlay](images/experiment3_overlay.png)
+<img width="790" height="618" alt="image" src="https://github.com/user-attachments/assets/28429cb8-4cb7-4458-b575-21e63f3e642f" />
+
 
 ## RESULT
 
