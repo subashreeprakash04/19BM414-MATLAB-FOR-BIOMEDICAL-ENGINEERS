@@ -2,7 +2,7 @@
 
 ## AIM
 
-To segment a tumor-like region from a medical image using thresholding and region growing.
+To segment a tumor-like region from a medical image using thresholding and region growing
 
 ## INPUT
 
@@ -16,7 +16,9 @@ Variable: I
 
 ## THEORY / PRINCIPLE
 
-Thresholding separates pixels based on their intensity values. Region growing starts from a selected seed pixel and adds neighbouring pixels whose intensity is sufficiently similar to the seed. These two methods are used to identify and separate a selected region from the surrounding medical image.
+Thresholding separates pixels by intensity. Region growing begins from a seed pixel and adds
+neighbouring pixels whose intensity is sufficiently similar. The two methods illustrate different
+approaches to image segmentation.
 
 ## PROCESSING FLOWCHART
 
@@ -25,17 +27,14 @@ Thresholding separates pixels based on their intensity values. Region growing st
 
 ## PROCEDURE
 
-1. Read the medical image using MATLAB.
-2. Convert the RGB image into grayscale if required.
-3. Normalize the image intensity values.
-4. Apply Gaussian smoothing to reduce noise.
-5. Apply global thresholding using Otsu's method.
-6. Remove small unwanted regions using morphological operations.
-7. Select a seed point at the centre of the image.
-8. Perform four-connected region growing using an intensity tolerance.
-9. Display the threshold mask and region-growing result.
-10. Overlay the segmented boundary on the original image.
-11. Calculate and compare the segmented areas.
+1. Read the image.
+2. Convert to grayscale and normalize.
+3. Smooth the image.
+4. Apply global thresholding and morphological cleaning.
+5. Select a seed point.
+6. Perform four-connected region growing.
+7. Display both masks and the boundary overlay.
+8. Calculate segmented areas.
 
 ## OBSERVATION
 
